@@ -1,0 +1,12 @@
+-- Simple Loader by HighSkill974
+-- Redirects user to LootLabs for script unlock
+
+setclipboard("https://lootdest.org/s?sBvLQYo3")
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Script Unlock Required",
+    Text = "Link copied to clipboard. Paste it in your browser to unlock the script.",
+    Duration = 10
+})
+
+wait(5)
+game.Players.LocalPlayer:Kick("Please complete the unlock steps. Link copied to clipboard.")
